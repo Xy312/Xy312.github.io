@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Xy312的个人博客</title>
+  
+  <subtitle>我好想，和时光一样潇洒的离开</subtitle>
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-04-20T06:44:48.391Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>i吃萝卜H青菜</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/post/0.html"/>
+    <id>http://example.com/post/0.html</id>
+    <published>2023-04-20T03:35:57.468Z</published>
+    <updated>2023-04-20T06:44:48.391Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;贪心算法&quot;&gt;&lt;a href=&quot;#贪心算法&quot; class=&quot;headerlink&quot; title=&quot;贪心算法&quot;&gt;&lt;/a&gt;贪心算法&lt;/h2&gt;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/post/0.html"/>
+    <id>http://example.com/post/0.html</id>
+    <published>2023-04-20T03:35:57.464Z</published>
+    <updated>2023-04-20T06:44:48.387Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="动态规划（Dynamic-Programing）学习笔记"><a href="#动态规划（Dynamic-Programing）学习笔记" class="headerlink" title="动态规划（Dynamic Programing）学习笔记"></a>动态规划（Dynamic Programing）学习笔记</h2><h3 id="动态规划的分类"><a href="#动态规划的分类" class="headerlink" title="动态规划的分类"></a>动态规划的分类</h3><p>何种情况可以考虑使用动态规划算法进行求解？主要分为一下三大类：</p><p><strong>1. 计数</strong></p><ul><li>有多少种方式走到右下角</li><li>有多少种方法选出k个数使得和为Sum</li></ul><p><strong>2. 求最大值最小值</strong></p><ul><li>从左上角走到右下角路径的最大数字和</li><li>最长上升子序列长度</li></ul><p><strong>3. 求存在性</strong></p><ul><li>取石子游戏，先手是否必胜</li><li>能不能选出k个数使得和是Sum</li></ul><h3 id="动态规划做题的四个步骤"><a href="#动态规划做题的四个步骤" class="headerlink" title="动态规划做题的四个步骤"></a>动态规划做题的四个步骤</h3><p><strong>1. 确定状态</strong></p><p>状态在动态规划中的作用属于定海神针；</p><ul><li><p>简单俩说，解动态规划的时候需要开一个数组，数组的每个元素f[ i ]或者f[ i ] [ j ]代表什么；</p></li><li><p>确定状态需要两个意识</p><ul><li>最后一步</li></ul><p><img src="C:\Users\Xy312zzZ\AppData\Roaming\Typora\typora-user-images\image-20220317173729775.png" alt="image-20220317173729775"></p><ul><li>子问题</li></ul></li></ul><p><strong>2. 状态转移方程</strong></p><p><strong>3. 初始条件和边界情况</strong></p><p><strong>4. 计算顺序</strong></p><h3 id="例题与应用"><a href="#例题与应用" class="headerlink" title="例题与应用"></a>例题与应用</h3><p>直接上例题，一边学习，一边练习。</p><p><a href="https://leetcode-cn.com/problems/coin-change/">322. 零钱兑换 - 力扣（LeetCode） (leetcode-cn.com)</a></p><p>最少硬币个数，可以联想到最大最小值的大类，</p><p>这道题的最后一步就是，凑够27的最后一步，a[k-1]+x&#x3D;a[k]&#x3D;27</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;动态规划（Dynamic-Programing）学习笔记&quot;&gt;&lt;a href=&quot;#动态规划（Dynamic-Programing）学习笔记&quot; class=&quot;headerlink&quot; title=&quot;动态规划（Dynamic Programing）学习笔记&quot;&gt;&lt;/a&gt;动态</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://example.com/post/0.html"/>
+    <id>http://example.com/post/0.html</id>
+    <published>2023-04-20T03:35:57.460Z</published>
+    <updated>2023-04-20T06:44:48.389Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="重启博客计划"><a href="#重启博客计划" class="headerlink" title="重启博客计划"></a>重启博客计划</h2><p>早在2019年就搭建过一个博客，那时还是大二，没有什么使用github的经验，所以后面搭建完就没用过了。现在在读研，科研无趣，就又想起了博客，想再一次玩起来。</p><h2 id="一、下载安装Node-js"><a href="#一、下载安装Node-js" class="headerlink" title="一、下载安装Node.js"></a>一、下载安装Node.js</h2><p>其中有个坑：运行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install express -g     # -g是全局安装的意思</span><br></pre></td></tr></table></figure><p>命令时，要用管理员身份，因为是全局安装（目测）。</p><p><a href="https://www.cnblogs.com/zhouyu2017/p/6485265.html?from=note%20%E5%87%BA%E5%A4%84%EF%BC%9Abilibili">Node.js下载安装教程</a></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure><h2 id="二、github账号注册与新建仓库"><a href="#二、github账号注册与新建仓库" class="headerlink" title="二、github账号注册与新建仓库"></a>二、github账号注册与新建仓库</h2><p>新建github仓库，名字为“name.github.io”</p><p>并将生成的SSH（id_rsa.pub文件中）保存至github中；</p><h2 id="三、构建本地仓库"><a href="#三、构建本地仓库" class="headerlink" title="三、构建本地仓库"></a>三、构建本地仓库</h2><p>在空文件夹中运行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure><p>遇到了很多坑；；；</p><p>大概记录一下，npm版本不能太高，要不然hexo init命令执行会出错；</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install npm@6.14.10 -g</span><br></pre></td></tr></table></figure><p>进行版本降低。</p><p>修改配置：</p><p><img src="C:\Users\Xy312zzZ\AppData\Roaming\Typora\typora-user-images\image-20230420112010597.png" alt="image-20230420112010597"></p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/Xy312/Xy312.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure><h3 id="四、上传仓库至github"><a href="#四、上传仓库至github" class="headerlink" title="## 四、上传仓库至github"></a>## 四、上传仓库至github</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure><p>中途需要登录github账号；</p><p>这里遇到了错误，登录有问题；</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> hexo d</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">INFO  Copying files from extend dirs...</span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br><span class="line">fatal: unable to access &#x27;https://github.com/Xy312/Xy312.github.io.git/&#x27;: Failed to connect to github.com port 443 after 21071 ms: Timed out</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (D:\Git\MgBlog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:520:28)</span><br><span class="line">      at ChildProcess.cp.emit (D:\Git\MgBlog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:291:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>联网问题，国内上github老问题了。</p><p>后边找一个加速器。</p><p>搭建博客的初衷是为了记录、分享（划掉，谁会看呢~）学习编程以及科研的经历和心得，OK，希望我能坚持！加油！</p><h2 id="五、主题美化"><a href="#五、主题美化" class="headerlink" title="五、主题美化"></a>五、主题美化</h2><p>最理想的是有人教我们如何实现个人栏如何实现；</p><p>如何管理博客（增删改查）；</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;重启博客计划&quot;&gt;&lt;a href=&quot;#重启博客计划&quot; class=&quot;headerlink&quot; title=&quot;重启博客计划&quot;&gt;&lt;/a&gt;重启博客计划&lt;/h2&gt;&lt;p&gt;早在2019年就搭建过一个博客，那时还是大二，没有什么使用github的经验，所以后面搭建完就没用过了。现在</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/post/4a17b156.html"/>
+    <id>http://example.com/post/4a17b156.html</id>
+    <published>2023-04-20T02:59:35.040Z</published>
+    <updated>2023-04-20T06:44:48.385Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>

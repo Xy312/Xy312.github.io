@@ -1,374 +1,231 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Xy312的个人博客 - 我好想，和时光一样潇洒的离开</title><meta name="author" content="i吃萝卜H青菜"><meta name="copyright" content="i吃萝卜H青菜"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Xy312的个人博客">
 <meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
+<meta property="og:site_name" content="Xy312的个人博客">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="i吃萝卜H青菜">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Xy312的个人博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-04-20 15:06:59'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
   
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
   
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
   
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-贪心算法学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/20/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time class="dt-published" datetime="2023-04-20T03:35:57.468Z" itemprop="datePublished">2023-04-20</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="贪心算法"><a href="#贪心算法" class="headerlink" title="贪心算法"></a>贪心算法</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/20/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="clgoknxt40003kwuddrenftnr" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Xy312的个人博客" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Xy312的个人博客"><span class="site-name">Xy312的个人博客</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Xy312的个人博客</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/post/0.html" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-20T03:35:57.468Z" title="发表于 2023-04-20 11:35:57">2023-04-20</time></span></div><div class="content">贪心算法</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/post/0.html" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-20T03:35:57.464Z" title="发表于 2023-04-20 11:35:57">2023-04-20</time></span></div><div class="content">动态规划（Dynamic Programing）学习笔记动态规划的分类何种情况可以考虑使用动态规划算法进行求解？主要分为一下三大类：
+1. 计数
+
+有多少种方式走到右下角
+有多少种方法选出k个数使得和为Sum
+
+2. 求最大值最小值
+
+从左上角走到右下角路径的最大数字和
+最长上升子序列长度
+
+3. 求存在性
+
+取石子游戏，先手是否必胜
+能不能选出k个数使得和是Sum
+
+动态规划做题的四个步骤1. 确定状态
+状态在动态规划中的作用属于定海神针；
+
+简单俩说，解动态规划的时候需要开一个数组，数组的每个元素f[ i ]或者f[ i ] [ j ]代表什么；
+
+确定状态需要两个意识
+
+最后一步
 
 
 
-  
-    <article id="post-动态规划算法学习笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/20/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="article-date">
-  <time class="dt-published" datetime="2023-04-20T03:35:57.464Z" itemprop="datePublished">2023-04-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="动态规划（Dynamic-Programing）学习笔记"><a href="#动态规划（Dynamic-Programing）学习笔记" class="headerlink" title="动态规划（Dynamic Programing）学习笔记"></a>动态规划（Dynamic Programing）学习笔记</h2><h3 id="动态规划的分类"><a href="#动态规划的分类" class="headerlink" title="动态规划的分类"></a>动态规划的分类</h3><p>何种情况可以考虑使用动态规划算法进行求解？主要分为一下三大类：</p>
-<p><strong>1. 计数</strong></p>
-<ul>
-<li>有多少种方式走到右下角</li>
-<li>有多少种方法选出k个数使得和为Sum</li>
-</ul>
-<p><strong>2. 求最大值最小值</strong></p>
-<ul>
-<li>从左上角走到右下角路径的最大数字和</li>
-<li>最长上升子序列长度</li>
-</ul>
-<p><strong>3. 求存在性</strong></p>
-<ul>
-<li>取石子游戏，先手是否必胜</li>
-<li>能不能选出k个数使得和是Sum</li>
-</ul>
-<h3 id="动态规划做题的四个步骤"><a href="#动态规划做题的四个步骤" class="headerlink" title="动态规划做题的四个步骤"></a>动态规划做题的四个步骤</h3><p><strong>1. 确定状态</strong></p>
-<p>状态在动态规划中的作用属于定海神针；</p>
-<ul>
-<li><p>简单俩说，解动态规划的时候需要开一个数组，数组的每个元素f[ i ]或者f[ i ] [ j ]代表什么；</p>
-</li>
-<li><p>确定状态需要两个意识</p>
-<ul>
-<li>最后一步</li>
-</ul>
-<p><img src="C:\Users\Xy312zzZ\AppData\Roaming\Typora\typora-user-images\image-20220317173729775.png" alt="image-20220317173729775"></p>
-<ul>
-<li>子问题</li>
-</ul>
-</li>
-</ul>
-<p><strong>2. 状态转移方程</strong></p>
-<p><strong>3. 初始条件和边界情况</strong></p>
-<p><strong>4. 计算顺序</strong></p>
-<h3 id="例题与应用"><a href="#例题与应用" class="headerlink" title="例题与应用"></a>例题与应用</h3><p>直接上例题，一边学习，一边练习。</p>
-<p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/coin-change/">322. 零钱兑换 - 力扣（LeetCode） (leetcode-cn.com)</a></p>
-<p>最少硬币个数，可以联想到最大最小值的大类，</p>
-<p>这道题的最后一步就是，凑够27的最后一步，a[k-1]+x&#x3D;a[k]&#x3D;27</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/20/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" data-id="clgoknxt10001kwud4gnhfl4k" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+子问题
 
 
 
-  
-    <article id="post-搭建博客平台" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/20/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0/" class="article-date">
-  <time class="dt-published" datetime="2023-04-20T03:35:57.460Z" itemprop="datePublished">2023-04-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="重启博客计划"><a href="#重启博客计划" class="headerlink" title="重启博客计划"></a>重启博客计划</h2><p>早在2019年就搭建过一个博客，那时还是大二，没有什么使用github的经验，所以后面搭建完就没用过了。现在在读研，科研无趣，就又想起了博客，想再一次玩起来。</p>
-<h2 id="一、下载安装Node-js"><a href="#一、下载安装Node-js" class="headerlink" title="一、下载安装Node.js"></a>一、下载安装Node.js</h2><p>其中有个坑：运行</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install express -g     # -g是全局安装的意思</span><br></pre></td></tr></table></figure>
+2. 状态转移方程
+3. 初始条件和边界情况
+4. 计算顺序
+例题与应用直接上例题，一边学习，一边练习。
+322. 零钱兑换 - 力扣（LeetCode） (leetcode-cn.com)
+最少硬币个数，可以联想到最大最小值的大类，
+这道题的最后一步就是，凑够27的最后一步，a[k-1]+x&#x3D;a[k]&#x3D;27
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/post/0.html" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-20T03:35:57.460Z" title="发表于 2023-04-20 11:35:57">2023-04-20</time></span></div><div class="content">重启博客计划早在2019年就搭建过一个博客，那时还是大二，没有什么使用github的经验，所以后面搭建完就没用过了。现在在读研，科研无趣，就又想起了博客，想再一次玩起来。
+一、下载安装Node.js其中有个坑：运行
+1npm install express -g     # -g是全局安装的意思
 
-<p>命令时，要用管理员身份，因为是全局安装（目测）。</p>
-<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/zhouyu2017/p/6485265.html?from=note%20%E5%87%BA%E5%A4%84%EF%BC%9Abilibili">Node.js下载安装教程</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+命令时，要用管理员身份，因为是全局安装（目测）。
+Node.js下载安装教程
+12npm install hexo-cli -ghexo -v
 
-<h2 id="二、github账号注册与新建仓库"><a href="#二、github账号注册与新建仓库" class="headerlink" title="二、github账号注册与新建仓库"></a>二、github账号注册与新建仓库</h2><p>新建github仓库，名字为“name.github.io”</p>
-<p>并将生成的SSH（id_rsa.pub文件中）保存至github中；</p>
-<h2 id="三、构建本地仓库"><a href="#三、构建本地仓库" class="headerlink" title="三、构建本地仓库"></a>三、构建本地仓库</h2><p>在空文件夹中运行</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+二、github账号注册与新建仓库新建github仓库，名字为“name.github.io”
+并将生成的SSH（id_rsa.pub文件中）保存至github中；
+三、构建本地仓库在空文件夹中运行
+12hexo inithexo s
 
-<p>遇到了很多坑；；；</p>
-<p>大概记录一下，npm版本不能太高，要不然hexo init命令执行会出错；</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install npm@6.14.10 -g</span><br></pre></td></tr></table></figure>
+遇到了很多坑；；；
+大概记录一下，npm版本不能太高，要不然hexo init命令执行会出错；
+1npm install npm@6.14.10 -g
 
-<p>进行版本降低。</p>
-<p>修改配置：</p>
-<p><img src="C:\Users\Xy312zzZ\AppData\Roaming\Typora\typora-user-images\image-20230420112010597.png" alt="image-20230420112010597"></p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://github.com/Xy312/Xy312.github.io</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+进行版本降低。
+修改配置：
 
-<h3 id="四、上传仓库至github"><a href="#四、上传仓库至github" class="headerlink" title="## 四、上传仓库至github"></a>## 四、上传仓库至github</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+123456# Deployment## Docs: https://hexo.io/docs/one-command-deploy ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/post/4a17b156.html" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2023-04-20T02:59:35.040Z" title="发表于 2023-04-20 10:59:35">2023-04-20</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
-<p>中途需要登录github账号；</p>
-<p>这里遇到了错误，登录有问题；</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"> hexo d</span><br><span class="line">INFO  Validating config</span><br><span class="line">INFO  Deploying: git</span><br><span class="line">INFO  Clearing .deploy_git folder...</span><br><span class="line">INFO  Copying files from public folder...</span><br><span class="line">INFO  Copying files from extend dirs...</span><br><span class="line">On branch master</span><br><span class="line">nothing to commit, working tree clean</span><br><span class="line">fatal: unable to access &#x27;https://github.com/Xy312/Xy312.github.io.git/&#x27;: Failed to connect to github.com port 443 after 21071 ms: Timed out</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: Spawn failed</span><br><span class="line">      at ChildProcess.&lt;anonymous&gt; (D:\Git\MgBlog\node_modules\hexo-util\lib\spawn.js:51:21)</span><br><span class="line">      at ChildProcess.emit (node:events:520:28)</span><br><span class="line">      at ChildProcess.cp.emit (D:\Git\MgBlog\node_modules\cross-spawn\lib\enoent.js:34:29)</span><br><span class="line">      at Process.ChildProcess._handle.onexit (node:internal/child_process:291:12) &#123;</span><br><span class="line">    code: 128</span><br><span class="line">  &#125;</span><br><span class="line">&#125; Something&#x27;s wrong. Maybe you can find the solution here: %s https://hexo.io/docs/troubleshooting.html</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+More info: Writing
+Run server1$ hexo server
 
-<p>联网问题，国内上github老问题了。</p>
-<p>后边找一个加速器。</p>
-<p>搭建博客的初衷是为了记录、分享（划掉，谁会看呢~）学习编程以及科研的经历和心得，OK，希望我能坚持！加油！</p>
-<h2 id="五、主题美化"><a href="#五、主题美化" class="headerlink" title="五、主题美化"></a>五、主题美化</h2><p>最理想的是有人教我们如何实现个人栏如何实现；</p>
-<p>如何管理博客（增删改查）；</p>
+More info: Server
+Generate static files1$ hexo generate
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/20/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0/" data-id="clgoknxt30002kwudeymc3cdt" data-title="" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+More info: Generating
+Deploy to remote sites1$ hexo deploy
 
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/20/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-04-20T02:59:35.040Z" itemprop="datePublished">2023-04-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/04/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/20/hello-world/" data-id="clgoknxss0000kwuddf1k85s5" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/04/20/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/20/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%AE%97%E6%B3%95%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/20/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/20/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">i吃萝卜H青菜</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/0.html" title="无题">无题</a><time datetime="2023-04-20T03:35:57.468Z" title="发表于 2023-04-20 11:35:57">2023-04-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/0.html" title="无题">无题</a><time datetime="2023-04-20T03:35:57.464Z" title="发表于 2023-04-20 11:35:57">2023-04-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/0.html" title="无题">无题</a><time datetime="2023-04-20T03:35:57.460Z" title="发表于 2023-04-20 11:35:57">2023-04-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/post/4a17b156.html" title="Hello World">Hello World</a><time datetime="2023-04-20T02:59:35.040Z" title="发表于 2023-04-20 10:59:35">2023-04-20</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">四月 2023</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">4</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-04-20T07:06:59.483Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By i吃萝卜H青菜</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
